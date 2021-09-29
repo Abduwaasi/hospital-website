@@ -50,14 +50,15 @@ export const Container = Styled.div`
   }
 `;
 
-export const Button = Styled.a`
+export const Button = Styled.button`
  background-color:var(--primary);
- padding: 1rem 2rem;
+ border:none;
+ outline:none;
+ padding: 1rem 3rem;
  color:var(--white);
  font-size:1rem;
- font-weight:500;
- box-shadow:2px 2px 3px var(--primary);
-border-radius:0.5rem;
+ box-shadow:2px 2px 3px var(--grey);
+ border-radius:0.3rem;
  display: inline-block;
  transition: var(--transition);
  cursor:pointer;

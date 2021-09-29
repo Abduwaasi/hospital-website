@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import {FaMagento} from "react-icons/fa"
 import { Container } from "../../GlobalStyle"
 export const FooterContainer = Styled(Container)`
-background-color:var(--dark);
+background-color:var(--primary);
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -46,7 +46,7 @@ export const FormInput = Styled.input`
  border:none;
  outline:none;
  border-radius:2px;
- border:1px solid var(--whiter);
+ border:1px solid var(--white);
  margin-right:10px;
  font-size:1rem;
 
@@ -103,6 +103,7 @@ margin-bottom:16px;
 export const FooterLink = Styled(Link)`
  color: var(--white);
  text-decoration:none;
+ margin-bottom:0.5rem;
 
  &:hover{
      transition:var(--transition);

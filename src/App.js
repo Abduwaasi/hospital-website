@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyle from './GlobalStyle'
-import { Navbar,Footer } from './Components'
+import { Navbar,Footer,Flex} from './Components'
 
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
     <Router>
     <GlobalStyle/>
       <Navbar/>
+      <Flex/>
       <Footer/>
     </Router>
   )

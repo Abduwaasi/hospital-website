@@ -8,14 +8,17 @@ export const Nav = styled.nav`
   display:flex;
   justify-content:center;
   align-items:center;
-  background-color:var(--dark);
+  background-color:var(--primary);
   color:var(--white);
   height:80px;
   position:sticky;
   top:0;
   left:0;
   z-index:99;
-
+  transition:var(--transition);
+&:hover{
+  background-color:var(--primary);
+}
 `;
 
 export const NavContainer = styled(Container)`
@@ -69,7 +72,7 @@ export const NavMenu = styled.ul`
    @media screen  and (max-width:768px){
      width:100%;
      height:90vh;
-     background-color:var(--dark);
+     background-color:var(--primary);
      position:absolute;
      top:80px;
      left:${({clicked})=>(clicked?0:"-100%")};
