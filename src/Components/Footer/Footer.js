@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import {FaFacebook, FaLinkedin,FaYoutube,FaInstagram,FaTwitter} from "react-icons/fa"
 import { Button } from "../../GlobalStyle";
+import  InfoCard  from "../Cards/InfoCard";
 import {
   FooterContainer,
   FooterSubcription,
@@ -58,19 +59,15 @@ const Footer = () => {
               <FooterLink to="/sign-up">Medication Pill</FooterLink>
               <FooterLink to="/sign-up">Full life support</FooterLink>
            </FooterLinksItems>
-           </FooterLinksWrapper>
-           
-           <FooterLinksWrapper>
            <FooterLinksItems>
-             <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to="/sign-up">How it works</FooterLink>
-              <FooterLink to="/sign-up">Testimonials</FooterLink>
-              <FooterLink to="/sign-up">Carees</FooterLink>
-              <FooterLink to="/sign-up">Investors</FooterLink>
-              <FooterLink to="/sign-up">Terms of services</FooterLink>
+           <FooterLinkTitle>Services</FooterLinkTitle>
+              <FooterLink to="/sign-up">Emergency Help</FooterLink>
+              <FooterLink to="/sign-up">Hospital Treatment</FooterLink>
+              <FooterLink to="/sign-up">Mobile Healthcare</FooterLink>
+              <FooterLink to="/sign-up">Medication Pill</FooterLink>
+              <FooterLink to="/sign-up">Full life support</FooterLink>
            </FooterLinksItems>
-          
-         </FooterLinksWrapper>
+           </FooterLinksWrapper>  
        </FooterLinksContainer>
        <SocialMedia>
          <SocialMediaWrap>

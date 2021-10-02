@@ -7,8 +7,9 @@ padding-bottom:4rem;
 `
 export const ServiceContainer = styled(Container)`
 display:grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap:2rem;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+gap:1rem;
+box-shadow:10px 10px 15px var(--white);
 ${Container};
 `
 export const ServiceContent = styled.div`
@@ -18,11 +19,21 @@ export const ImageContainer = styled.img`
 width:100%;
 height:250px;
 display:inline-block;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
 `
 export const ServiceInfo = styled.div`
-background-color:var(--primary);
-color:var(--white);
-padding:2rem;
+background-color:var(--white);
+color:var(--dark);
+padding:2rem 1rem;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+transition:var(--transition);
+
+:hover{
+    background-color:var(--primary);
+    color:var(--white);   
+}
 `
 export const ServiceTitle = styled.h3`
  font-size:1.5rem;
