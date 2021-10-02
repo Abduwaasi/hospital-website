@@ -1,3 +1,8 @@
 export {default as Navbar} from "./Navbar/Navbar"
 export {default as Footer} from "./Footer/Footer"
 export {default as Flex} from "./Flex/Flex"
+export {default as Service} from "./Service/Service"
+export {default as MedicalService} from "./MedicalService/MedicalService"
+export {default as Review} from "./Review/Review"
+export {default as Map} from "./Map/Map"
+export {default as Form} from "./Form/Form"

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Container } from "../../GlobalStyle";
 
-import { FaMagento } from "react-icons/fa";
+import { FaClinicMedical} from "react-icons/fa";
 
 export const Nav = styled.nav`
   display:flex;
@@ -46,8 +46,9 @@ font-weight:700;
 }
  
 `;
-export const NavIcon = styled(FaMagento)`
+export const NavIcon = styled(FaClinicMedical)`
  margin-right:1rem;
+ 
 
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyle from './GlobalStyle'
-import { Navbar,Footer,Flex} from './Components'
+import { Navbar,Footer,Flex,Service,MedicalService,Review,Map,Form} from './Components'
 
 
 const App = () => {
@@ -9,8 +9,14 @@ const App = () => {
     <Router>
     <GlobalStyle/>
       <Navbar/>
-      <Flex/>
+      <Form/>
+      {/* <Flex/>
+      <Service/>
+      <MedicalService/>
+      <Review/> */}
+      {/* <Map/> */}
       <Footer/>
+
     </Router>
   )
 }
