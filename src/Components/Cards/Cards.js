@@ -4,8 +4,9 @@ import styled from "styled-components"
  background-color: var(--primary);
  color: var(--white);
  padding: 3rem 2rem;
- border-radius: 3px;
- box-shadow: 5px 5px 10px lightgray;
+ width:100%;
+ height:100%;
+
 
  h2{
      margin-bottom: 1rem;
@@ -26,11 +27,11 @@ import styled from "styled-components"
  }
 `
 
- const EmergencyCard =()=>{
+ const Cards =()=>{
     return <Wrapper>
       <h2>For Emergencies</h2>
       <h4>08167641246</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolor. Ipsam est praesentium, exercitationem quod pariatur explicabo laudantium quasi nam.</p>
     </Wrapper>
 }
-export default EmergencyCard
+export default Cards

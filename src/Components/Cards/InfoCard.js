@@ -10,6 +10,8 @@ export const Wrapper= styled.div`
  color: var(--white);
  padding: 3rem 2rem;
  border-radius: 3px;
+ width:100%;
+ height:100%;
  text-align:left;
 `
 
