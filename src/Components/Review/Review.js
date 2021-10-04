@@ -3,7 +3,7 @@ import {MdRateReview} from "react-icons/md"
 import { peoples } from '../../data';
 import { IconContext } from 'react-icons/lib';
 import {FiChevronLeft,FiChevronRight} from "react-icons/fi"
-import { ReviewWrapper,ReviewContainer,TitleCenter,PersonCard,Text,Image,Name,Title,IconButton,PersonArticle } from './Review.elements';
+import { ReviewWrapper,ReviewContainer,TitleCenter,PersonCard,Text,Image,Name,Title,IconButton,PersonArticle,PrevButton,NextButton } from './Review.elements';
 
 const Review = () => {
     const [people, setPeople] = useState(peoples);
@@ -59,13 +59,13 @@ const Review = () => {
                     </PersonArticle>
                 })}
             </PersonCard>
-            
-               <IconButton prev onClick={()=>setIndex(index-1)}>
+            <PrevButton onClick={()=>setIndex(index-1)}>
                <FiChevronLeft />
-               </IconButton>
-               <IconButton next onClick={()=>setIndex(index+1)}>
+              </PrevButton>
+               <NextButton className="next" onClick={()=>setIndex(index+1)}>
                <FiChevronRight />
-               </IconButton>
+               </NextButton>
+        
             </ReviewContainer>
 
         </ReviewWrapper>

@@ -23,6 +23,10 @@ font-size:3rem;
 font-weight:700;
 letter-spacing:1.5;
 
+@media screen and (max-width:768px){
+    font-size:1.5rem;
+}
+
 `
 export const AboutText = styled.p`
 font-size:1.2rem;

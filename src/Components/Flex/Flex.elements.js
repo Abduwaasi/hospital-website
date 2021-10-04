@@ -38,6 +38,7 @@ h1{
 }
 p{
     margin-bottom:1.6rem;
+    text-align:justify;
     font-size:1.5rem;
     font-weight:400;
     letter-spacing:1.4;

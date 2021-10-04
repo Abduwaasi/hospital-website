@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import Styled, { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
  :root{
@@ -68,6 +69,28 @@ export const Button = Styled.button`
  }
 
 `
+export const IconButton = Styled.button`
+outline:none;
+  transform: translateY(-50%);
+  background: var(--dark-blue);
+  color: var(--white);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border:2px solid var(--white);
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+ position:absolute;
+ transition:var(--transition);
+ :hover{
+     background: var(--white);
+     color:var(--dark-blue);
+ }
+`
+
 
 
 export default GlobalStyle;

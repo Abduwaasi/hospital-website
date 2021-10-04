@@ -30,7 +30,7 @@ const Navbar = ({clicked}) => {
        <NavContainer>
          <NavLogo to="/" onClick={closeMenu}>
            <Logo src={AMF} alt="amf logo"/>
-           Health <br/>Services
+           AMF Health <br/>Services
          </NavLogo>
          <MenuIcon onClick={handleClick}>
            {click?<FaTimes/>:<FaBars/>}

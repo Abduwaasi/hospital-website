@@ -2,6 +2,7 @@ import Styled from "styled-components"
 import {Link} from "react-router-dom"
 import {FaMagento} from "react-icons/fa"
 import { Container } from "../../GlobalStyle"
+
 export const FooterContainer = Styled.section`
 background-color:var(--dark-footer);
 display:flex;
@@ -57,7 +58,7 @@ export const FormInput = Styled.input`
  }
  
  &::placeholder{
-   color:#242424;
+   color: var(--dark-blue);
  }
 `
 export const FooterLinksContainer = Styled.div`
@@ -137,8 +138,10 @@ export const SocialLogo = Styled(Link)`
  margin-bottom:1rem;
  font-size:2rem;
 `
-export const SocialIcon = Styled(FaMagento)`
+export const OfficialLogo = Styled.img`
  margin-right:10px;
+ width:50px;
+ height:50px;
 `
 export const WebsiteRight = Styled.small`
 color:var(--white);
@@ -154,4 +157,13 @@ width:240px;
 export const SocialIconLink= Styled.a`
  color:var(--white);
  font-size:24px;
+`
+
+export const IconWrapper = Styled.div`
+display:flex;
+justify-content:center;
+
+div{
+    margin-left:1rem;
+}
 `

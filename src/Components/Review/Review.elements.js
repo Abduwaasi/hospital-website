@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../GlobalStyle";
+import { Container, IconButton } from "../../GlobalStyle";
  export const ReviewWrapper= styled.section`
  padding-top:3rem;
  padding-bottom:3rem;
@@ -7,7 +7,8 @@ import { Container } from "../../GlobalStyle";
  `
 
  export const ReviewContainer = styled(Container)`
- text-align:center;;
+ text-align:center;
+ position:relative;
  ${Container}
  `
  export const TitleCenter = styled.div`
@@ -25,7 +26,7 @@ import { Container } from "../../GlobalStyle";
   height:450px;
   margin:auto;
   text-align:center;
-  position: relative;
+  position:relative;
   display:flex;
   overflow: hidden;
  `
@@ -55,7 +56,14 @@ import { Container } from "../../GlobalStyle";
  line-height:1.5;
  letter-spacing:1.3;
  font-weight: 400;
- margin-bottom: 1rem;
+ margin-bottom: 2rem;
+
+ @media screen and (max-width:768px){
+   font-size:1.2rem;
+ }
+ @media screen and (max-width:425px){
+   font-size:1rem;
+ }
  `
  export const Image = styled.img`
  width:250px;
@@ -66,8 +74,8 @@ import { Container } from "../../GlobalStyle";
  margin:0.8rem auto;
 
  @media screen and (max-width:768px){
-  width:200px;
- height:200px;
+  width:150px;
+ height:150px;
  }
  `
  export const Name = styled.h4`
@@ -84,22 +92,16 @@ import { Container } from "../../GlobalStyle";
  font-size:1rem;
  font-weight:300;
  `
- export const IconButton = styled.button`
- outline:none;
- position: absolute;
-  top: 300px;
-  transform: translateY(-50%);
-  background: var(--primary);
-  color: var(--white);
-  width: 2rem;
-  height: 2rem;
-  display: grid;
-  place-items: center;
-  border:2px solid var(--white);
-  font-size: 2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: var(--transition);
-  left:${({prev})=>(prev&& "1rem")};
-  right:${({next})=>(next && "1rem")};
+ export const PrevButton = styled(IconButton)`
+ ${IconButton};
+top:200px;
+left:0;
+ 
  `
+ export const NextButton = styled(IconButton)`
+ ${IconButton};
+top:200px;
+right:0;
+ 
+ `
+ 
