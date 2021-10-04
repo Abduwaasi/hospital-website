@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import {Container} from "../../GlobalStyle"
 export const MedService= styled.section`
-background-color:var(--primary);
+background:linear-gradient(to right, var(--dark-blue), var(--light-blue));
 padding-top:4rem;
 padding-bottom: 4rem;
 text-align:center;
 
 h2{
+    font-size:2rem;
     color:var(--white);
-    font-weight:600;
-    letter-spacing:1.4;
+    font-weight:700;
+    letter-spacing:1.5;
     margin:1rem auto
 }
 
@@ -31,11 +32,14 @@ export const Title= styled.h3`
 color:var(--white);
 margin-top:0.5rem;
 margin-bottom:0.5rem;
+font-size:1.4rem;
+font-weight:400;
 `
 export const Text= styled.p`
 color:var(--white);
-font-size:0.9rem;
+font-size:1rem;
 letter-spacing:1.5;
 line-height:1.5;
-margin-bottom:1rem;
+margin:1rem auto;
+font-weight:300;
 `

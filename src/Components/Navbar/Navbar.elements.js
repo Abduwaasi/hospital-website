@@ -2,13 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Container } from "../../GlobalStyle";
 
-import { FaClinicMedical} from "react-icons/fa";
 
 export const Nav = styled.nav`
   display:flex;
   justify-content:center;
   align-items:center;
-  background-color:var(--primary);
+  background-color:var(--dark-blue);
   color:var(--white);
   height:80px;
   position:sticky;
@@ -16,9 +15,7 @@ export const Nav = styled.nav`
   left:0;
   z-index:99;
   transition:var(--transition);
-&:hover{
-  background-color:var(--primary);
-}
+
 `;
 
 export const NavContainer = styled(Container)`
@@ -32,22 +29,20 @@ ${Container};
 export const NavLogo = styled(Link)`
 display: flex;
 align-items:center;
-/* justify-self:flex-start; */
 color:var(--white);
-font-size:2rem;
+font-size:1.2rem;
 font-weight:700;
 
 @media screen and (max-width:768px){
-  font-size:1.5rem
+  font-size:1rem
 }
 
-@media screen and (max-width:420px){
-  font-size:1rem;
-}
  
 `;
-export const NavIcon = styled(FaClinicMedical)`
- margin-right:1rem;
+export const Logo = styled.img`
+width:50px;
+height:50px;
+ margin-right:0.6rem;
  
 
 `;
@@ -73,7 +68,7 @@ export const NavMenu = styled.ul`
    @media screen  and (max-width:768px){
      width:100%;
      height:90vh;
-     background-color:var(--primary);
+     background-color:var(--dark-blue);
      position:absolute;
      top:80px;
      left:${({clicked})=>(clicked?0:"-100%")};
@@ -101,7 +96,8 @@ text-transform:capitalize;
 transition:var(--transition);
 
 &:hover{
-  color:var(--primary);
+  text-decoration:underline;
+  color:var(--light-blue);
 }
 `;
 

@@ -3,10 +3,8 @@ import styled from "styled-components";
 import { Container } from "../../GlobalStyle";
 
 export const FlexWrapper = styled.div`
-background-color:var(--primary);
+background:linear-gradient(to right, var(--dark-blue) , var(--light-blue));
 width:100%;
-position:relative;
-
 `
 
 export const FlexContainer = styled(Container)`
@@ -32,15 +30,18 @@ color:var(--white);
 
 h1{
     margin-bottom:1rem;
+    letter-spacing:1.5;
     font-size:3rem;
-    font-weight:3rem;
-    width:95%;
+    font-weight:700;
+    width:90%;
 
 }
 p{
-    margin-bottom:1rem;
-    line-height: 1.6;
-    width:90%;
+    margin-bottom:1.6rem;
+    font-size:1.5rem;
+    font-weight:400;
+    letter-spacing:1.4;
+    line-height:1.5;
 }
 @media screen and (max-width:768px){
   width:100%;
@@ -77,7 +78,7 @@ export const Image = styled.img`
 // Home Info styling
 
 export const HomeContact = styled.div`
-background-color: gray;
+background-color:var(--gray-background);
 padding-top: 5rem;
 padding-bottom: 5rem;
 `
@@ -112,15 +113,21 @@ p{
 // Home card
 
 export const HomeCard =styled.div`
-
+width:100%;
 background-color:var(--white);
 padding-top:3rem;
 padding-bottom:3rem;
 `
 export const HomeCardContainer = styled(Container)`
+margin:auto;
+margin-top:-5rem;
 display:grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-margin-top:-4rem;
+grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+
+@media screen and (max-width:768px){
+    padding:0;
+}
+
 
 ${Container};
 `

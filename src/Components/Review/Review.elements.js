@@ -3,7 +3,7 @@ import { Container } from "../../GlobalStyle";
  export const ReviewWrapper= styled.section`
  padding-top:3rem;
  padding-bottom:3rem;
- background-color: var(--primary);
+ background:linear-gradient(to right, var(--dark-blue), var(--light-blue));;
  `
 
  export const ReviewContainer = styled(Container)`
@@ -50,28 +50,39 @@ import { Container } from "../../GlobalStyle";
 
  `
  export const Text = styled.p`
+ font-size: 1.4rem;
  color:var(--white);
  line-height:1.5;
  letter-spacing:1.3;
+ font-weight: 400;
+ margin-bottom: 1rem;
  `
  export const Image = styled.img`
- width:150px;
- height:150px;
- border:2px solid var(--white);
+ width:250px;
+ height:250px;
+ border:2px solid var(--light-blue);
  border-radius:50%;
  object-fit:cover;
  margin:0.8rem auto;
+
+ @media screen and (max-width:768px){
+  width:200px;
+ height:200px;
+ }
  `
  export const Name = styled.h4`
  color:var(--white);
  margin:0.7rem auto;
  text-transform:capitalize;
  letter-spacing:1.4;
+ font-size:1.2rem;
  `
  export const Title = styled.h5`
  color:var(--white);
  text-transform:capitalize;
  letter-spacing:1.4;
+ font-size:1rem;
+ font-weight:300;
  `
  export const IconButton = styled.button`
  outline:none;

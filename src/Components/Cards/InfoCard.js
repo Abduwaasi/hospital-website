@@ -6,12 +6,12 @@ import { IconContext } from 'react-icons/lib'
 
 
 export const Wrapper= styled.div`
- background-color: var(--primary);
+ background-color: var(--light-blue);
  color: var(--white);
- padding: 3rem 2rem;
+ padding:  2rem;
  border-radius: 3px;
  width:100%;
- height:100%;
+ height: 350px;
  text-align:left;
 `
 
@@ -40,7 +40,7 @@ const InfoCard = () => {
     return (
         <Wrapper>
             <h3>Useful Information</h3>
-            <IconContext.Provider value={{style:{fontSize:"2rem"}}}>
+            <IconContext.Provider value={{style:{fontSize:"2rem", color:"var(--dark-blue"}}}>
             <IconWrapper>
              <FaClock/>
              <div>

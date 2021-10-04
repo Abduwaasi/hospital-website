@@ -5,12 +5,12 @@ background-color: var(--white);
 padding-top:4rem;
 padding-bottom:4rem;
 `
-export const ServiceContainer = styled(Container)`
+export const ServiceContainer = styled.div`
 display:grid;
-grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap:1rem;
 box-shadow:10px 10px 15px var(--white);
-${Container};
+width:100%;
 `
 export const ServiceContent = styled.div`
 padding:1rem;

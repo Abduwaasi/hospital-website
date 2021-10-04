@@ -1,29 +1,31 @@
 import react from "react"
 import styled from "styled-components"
  const Wrapper = styled.div`
- background-color: var(--primary);
+ background-color: var(--btn-blue);
  color: var(--white);
- padding: 3rem 2rem;
+ padding:2rem;
  width:100%;
- height:100%;
+ height: 350px;
+ border-radius:3px;
 
 
  h2{
      margin-bottom: 1rem;
-     font-size: 1.4rem;
+     font-size: 1.5rem;
      font-weight: 700;
      line-height: 1.4;
      letter-spacing: 1.4;
  }
  h4{
-     font-size: 2rem;
+     font-size: 2.4rem;
      margin-bottom: 1.4rem;
-     color:var(--dark);
-     letter-spacing: 1.3;
+     color:var(--dark-blue);
+     letter-spacing: 1.5;
  }
  p{
      font-size: 1rem;
-     font-weight: 5oo;
+     font-weight: 400;
+     line-height:1.4;
  }
 `
 

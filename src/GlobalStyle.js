@@ -1,14 +1,13 @@
 import Styled, { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
  :root{
-     --dark:#101522;
-     --white:#ffffff;
-     --primary:#4b59f7;
-     --secondary:#0467fb;
-     --gray:#a9b3c1;
-     --light-blue:#4859f7; 
-     --light-text:#f7f8fa;
-     --dark-text:#1c2237; 
+    --dark-blue:#0e1d60;
+    --light-blue:#3e65eb;
+    --btn-blue:#4175fe;
+    --white:#fff;
+    --text-black:#000609;
+    --gray-background:#fafafa;
+    --dark-footer:#010615;
      --transition:all .3s ease;
      --long-transition:all .6s ease;
 
@@ -20,8 +19,9 @@ const GlobalStyle = createGlobalStyle`
      margin: 0;
  }
  body{
-     font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Lato', sans-serif;
      font-size: 1rem;
+     color: var(--text-black);
  }
  img{
      width:100%;
@@ -51,20 +51,19 @@ export const Container = Styled.div`
 `;
 
 export const Button = Styled.button`
- background-color:var(--primary);
+ background-color:var(--btn-blue);
  border:none;
  outline:none;
  padding: 1rem 3rem;
  color:var(--white);
- font-size:1rem;
- box-shadow:2px 2px 3px var(--grey);
+ font-size:1.3rem;
  border-radius:0.3rem;
  display: inline-block;
  transition: var(--transition);
  cursor:pointer;
 
  &:hover{
-     color:var(--primary);
+     color:var(--btn-blue);
      background-color:var(--white)
  }
 

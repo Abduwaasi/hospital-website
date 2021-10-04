@@ -3,36 +3,48 @@ import styled from 'styled-components'
 export const FormComponent = styled.form`
 padding: 2rem 1rem;
 width:100%;
-background-color: var(--primary);
+height: 350px;
+background-color: var(--dark-blue);
+h2{
+  margin-bottom:1rem;
+  color:var(--white);
+  font-weight:400;
+  letter-spacing:1.5;
+}
 `
 export const Input= styled.input`
 padding: 1rem 2rem;
 width:100%;
-background-color: lightgray;
+font-size:1.2rem;
+background-color: var(--light-blue);
 margin:0.5rem auto;
 outline:none;
 border:transparent;
 border-radius:5px;
+color:var(--white);
+::placeholder{
+  color:var(--white);
+}
 :focus{
-    border:2px solid var(--primary);
-    background-color: var(--white);
-    color:lightgray;
+    background-color: var(--btn-blue);
+   
 }
 
 `
 
 export const Button = styled.input`
-background-color: var(--white);
-color:var(--primary);
+background-color: var(--btn-blue);
+color:var(--white);
 padding:1rem 3rem;
 text-transform:capitalize;
 font-size:1rem;
 transition:var(--transition);
-border:2px solid var(--primary);
 margin-top:0.5rem;
+outline:none;
+border:transparent;
 :hover{
-    background-color: var(--primary);
-    color:var(--white);
+    background-color: var(--white);
+    color:var(--btn-blue);
 }
 `
 

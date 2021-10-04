@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import AMF from "../../Images/amf_logo-min.png"
+
 import {
   Nav,
   NavContainer,
   NavLogo,
-  NavIcon,
+  Logo,
   MenuIcon,
   NavMenu,
   NavItem,
@@ -23,12 +25,12 @@ const Navbar = ({clicked}) => {
 
 
   return (
-    <IconContext.Provider value={{ color: "#fff", size: "2rem" }}>
-      <Nav>
+     <IconContext.Provider value={{style:{fontSize:"2rem",color:"var(--white)"}}}>
+       <Nav>
        <NavContainer>
          <NavLogo to="/" onClick={closeMenu}>
-           <NavIcon/>
-           Medical
+           <Logo src={AMF} alt="amf logo"/>
+           Health <br/>Services
          </NavLogo>
          <MenuIcon onClick={handleClick}>
            {click?<FaTimes/>:<FaBars/>}
@@ -38,18 +40,20 @@ const Navbar = ({clicked}) => {
              <NavLink to="/">Home</NavLink>
            </NavItem>
            <NavItem>
-             <NavLink to="/">About Us</NavLink>
+             <NavLink to="/about">About Us</NavLink>
            </NavItem>
            <NavItem>
-             <NavLink to="/">Services</NavLink>
+             <NavLink to="/service">Services</NavLink>
            </NavItem>
            <NavItem>
-             <NavLink to="/">Contact Us</NavLink>
+             <NavLink to="/contact">Contact Us</NavLink>
            </NavItem>
          </NavMenu>
        </NavContainer>
       </Nav>
-    </IconContext.Provider>
+    
+     </IconContext.Provider>
+      
   );
 };
 export default Navbar;

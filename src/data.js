@@ -72,46 +72,35 @@ export const medObj= [
     },
     {
         id:2,
-        icon:<FaAmbulance/>,
+        icon:<ImLab/>,
         title:"Ambulatory Care",
         text:"Phasellus at nunc orci. Donec ipsum metus, pharetr a quis nunc sit amet, maximus vehicula nibh.",
     },
     {
         id:3,
-        icon:<FaAmbulance/>,
+        icon:<MdLocalPharmacy/>,
         title:"Ambulatory Care",
         text:"Phasellus at nunc orci. Donec ipsum metus, pharetr a quis nunc sit amet, maximus vehicula nibh.",
     },
     {
         id:4,
-        icon:<FaAmbulance/>,
+        icon:<GoRadioTower/>,
         title:"Ambulatory Care",
         text:"Phasellus at nunc orci. Donec ipsum metus, pharetr a quis nunc sit amet, maximus vehicula nibh.",
     },
     {
         id:5,
-        icon:<FaAmbulance/>,
+        icon:<BiPhoneCall/>,
         title:"Ambulatory Care",
         text:"Phasellus at nunc orci. Donec ipsum metus, pharetr a quis nunc sit amet, maximus vehicula nibh.",
     },
     {
         id:6,
-        icon:<FaAmbulance/>,
-        title:"Ambulatory Care",
-        text:"Phasellus at nunc orci. Donec ipsum metus, pharetr a quis nunc sit amet, maximus vehicula nibh.",
-    },
-    {
-        id:7,
-        icon:<FaAmbulance/>,
-        title:"Ambulatory Care",
-        text:"Phasellus at nunc orci. Donec ipsum metus, pharetr a quis nunc sit amet, maximus vehicula nibh.",
-    },
-    {
-        id:8,
-        icon:<FaAmbulance/>,
+        icon:<BiClinic/>,
         title:"Ambulatory Care",
         text:"Phasellus at nunc orci. Donec ipsum metus, pharetr a quis nunc sit amet, maximus vehicula nibh.",
     }
+   
 ]
 
 export const peoples = [
@@ -152,6 +141,25 @@ export const peoples = [
         'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ',
     },
   ];
+
+  export const doctors=[
+      {
+          id:1,
+          image:require("./Images/doctor-min.jpg").default,
+          name:"Dr. Josh Henderson",
+          title:"Cardiologist",
+          contact:"08166778899"
+
+      },
+      {
+          id:2,
+          image:require("./Images/doctor2-min.jpg").default,
+          name:"Dr. Josh Henderson",
+          title:"Cardiologist",
+          contact:"08166778899"
+
+      }
+  ]
   
 
   

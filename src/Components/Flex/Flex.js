@@ -14,7 +14,7 @@ const Flex = () => {
            <FlexContainer>
                <FlexRow>
                    <FlexInfo>
-                    <h1>Medical healthcare solution</h1>
+                    <h1>AMF health service solution</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates illo doloribus, similique delectus amet suscipit nulla quod? Explicabo, aut sint?</p>
                     <Button>Services</Button>
                    </FlexInfo>
