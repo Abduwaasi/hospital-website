@@ -1,5 +1,6 @@
 import React, {useState}from 'react'
 import { FormComponent,NameContainer,Message,Button,Input } from './Form.element'
+import Success from '../Success/Success'
 
 const Form = () => {
     const [name, setName] = useState("")
@@ -25,11 +26,13 @@ const Form = () => {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": "contact", name,phone, email, message }),
         })
-          .then(() => alert("Message sent!"))
+          .then(() => {
+                 return <Succ   ess/>
+          } )
           .catch((error) => alert(error));
       }
     return (
-        <FormComponent netlify name="contact" onSubmit={handleSubmit}>
+        <FormComponent netlify name="contact" onSubmit={handleSubmit} method="POST">
             <NameContainer>
                 <Input type="text" id="name" name="name" placeholder="Name" value={name} onChange={(e)=>setName(e.target.value)}/>
                 <Input type="text" id="phone" name="phone" placeholder="Email" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
