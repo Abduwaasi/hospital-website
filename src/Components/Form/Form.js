@@ -27,7 +27,7 @@ const Form = () => {
           body: encode({ "form-name": "contact", name,phone, email, message }),
         })
           .then(() => {
-                 return <Succ   ess/>
+                 return <Success/>
           } )
           .catch((error) => alert(error));
       }
