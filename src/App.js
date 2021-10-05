@@ -6,11 +6,13 @@ import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
+import ScrollToTop from './ScrollToTop'
 
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop/>
     <GlobalStyle/>
       <Navbar/>
       <Switch>

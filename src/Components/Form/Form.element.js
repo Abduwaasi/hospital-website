@@ -18,15 +18,19 @@ width:100%;
 export const Input= styled.input`
 padding: 1rem 2rem;
 width:100%;
-background-color: lightgray;
+background-color: var(--gray-background);
 margin:0.5rem auto;
 outline:none;
 border:transparent;
 border-radius:5px;
-:focus{
-    border:2px solid var(--primary);
+font-size:1.2rem;
+:hover{
     background-color: var(--white);
-    color:lightgray;
+    color:var(--text-black);
+}
+:focus{
+    background-color: var(--white);
+    border:2px solid var(--light-blue);
 }
 
 `
@@ -37,27 +41,34 @@ height:200px;
 outline:none;
 border:transparent;
 border-radius:5px;
-background: lightgray;
-font-size:1rem;
+background: var(--gray-background);
+color:var(--text-black);
+font-size:1.2rem;
 margin:0.5rem auto;
+transition: var(--transition);
 
+:hover{
+    color:var(--text-black);
+    background-color:var(--white);
+}
 :focus{
     background-color: var(--white);
-    color:lightgray;
-    border:2px solid var(--primary);
+    border:2px solid var(--light-blue);
 }
 `
 export const Button = styled.input`
 background-color: var(--white);
-color:var(--primary);
+color:var(--btn-blue);
 padding:1rem 3rem;
 text-transform:capitalize;
-font-size:1rem;
+font-size:1.2rem;
 transition:var(--transition);
-border:2px solid var(--primary);
+outline:none;
+border:2px solid var(--btn-blue);
+
 margin-top:0.5rem;
 :hover{
-    background-color: var(--primary);
+    background-color: var(--btn-blue);
     color:var(--white);
 }
 `

@@ -11,6 +11,18 @@ padding-bottom:3rem;
 `
  const CardContainer = styled(Container)`
 text-align: center;
+
+h2{
+  font-size:2rem;
+  color:var(--dark-blue);
+  letter-spacing: 1.5;
+ }
+ p{
+     font-size:1.2rem;
+     font-weight:400;
+     letter-spacing:1.5;
+ }
+
 ${Container};
 `
 
@@ -27,6 +39,7 @@ const Underline = styled.div`
  gap:2rem;
  justify-content:center;
  align-items:center;
+ 
 
  @media screen and (max-width:768px){
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

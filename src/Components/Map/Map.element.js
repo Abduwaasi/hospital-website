@@ -2,6 +2,8 @@ import styled from "styled-components";
 import {Container} from "../../GlobalStyle"
 
 export const GoogleMap = styled(Container)`
+margin-top:2rem;
+width:100%;
 height:400px;
 background-color:var(--white);
 ${Container}

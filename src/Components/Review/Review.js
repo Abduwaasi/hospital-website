@@ -3,7 +3,7 @@ import {MdRateReview} from "react-icons/md"
 import { peoples } from '../../data';
 import { IconContext } from 'react-icons/lib';
 import {FiChevronLeft,FiChevronRight} from "react-icons/fi"
-import { ReviewWrapper,ReviewContainer,TitleCenter,PersonCard,Text,Image,Name,Title,IconButton,PersonArticle,PrevButton,NextButton } from './Review.elements';
+import { ReviewWrapper,ReviewContainer,TitleCenter,PersonCard,Text,Image,Name,Title,PersonArticle,PrevButton,NextButton } from './Review.elements';
 
 const Review = () => {
     const [people, setPeople] = useState(peoples);

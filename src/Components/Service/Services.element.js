@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Container } from "../../GlobalStyle"
 export const Servic=  styled.section`
 background-color: var(--white);
 padding-top:4rem;

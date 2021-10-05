@@ -37,8 +37,8 @@ const Contact = () => {
                     <InfoCard/>
                 </CardWrapper>
              </FormWrapper>
-             <Map/>
             </ContactContainer> 
+             <Map/>
         </ContactPage>
     )
 }
