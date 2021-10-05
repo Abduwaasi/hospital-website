@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const FormComponent = styled.form`
 padding: 2rem;
+background-color:var(--dark-blue);
 width:100%;
 `
 export const NameContainer = styled.div`

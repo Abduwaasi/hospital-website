@@ -6,7 +6,7 @@ import {Form,Cards,InfoCard,Map} from "../../Components"
 const ContactPage = styled.section`
  padding-top:3rem;
  padding-bottom:3rem;
- background-color:var(--white);
+ background-color:var(--gray-background);
 `
 
  const ContactContainer = styled(Container)`
