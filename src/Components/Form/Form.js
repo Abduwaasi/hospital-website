@@ -35,7 +35,7 @@ const Form = () => {
         <FormComponent netlify name="contact" onSubmit={handleSubmit} method="POST">
             <NameContainer>
                 <Input type="text" id="name" name="name" placeholder="Name" value={name} onChange={(e)=>setName(e.target.value)}/>
-                <Input type="text" id="phone" name="phone" placeholder="Email" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
+                <Input type="text" id="phone" name="phone" placeholder="Phone" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
             </NameContainer>
             <Input type="email" id="email" name="email" placeholder="Email" value={email} onChange={(e)=>setMail(e.target.value)}/>
             <Message id="message" name="message" cols="30" rows="10" placeholder="Message" value={message} onChange={(e)=>setMessage(e.target.value)}/>

@@ -80,7 +80,7 @@ const Form = () => {
 
             <h2>Book an Appointment</h2>
                 <Input type="text" id="name" name="name" placeholder="Name" value={name} onChange={(e)=>setName(e.target.value)}/>
-                <Input type="text" id="phone" name="phone" placeholder="Email" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
+                <Input type="text" id="phone" name="phone" placeholder="Phone" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
            
             <Input type="email" id="email" name="email" placeholder="Email" value={email} onChange={(e)=>setMail(e.target.value)}/>
             <Button type="submit" value="send message"/>
